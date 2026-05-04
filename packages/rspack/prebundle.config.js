@@ -52,18 +52,26 @@ import { MiddlewareHandler } from 'hono';`,
     },
     {
       name: 'watchpack',
-      dtsExternals: ['graceful-fs'],
+      copyDts: true,
       afterBundle(task) {
-        const importStatement = "import fs from 'graceful-fs';";
-        const ignoredImportStatement = `// @ts-ignore\n${importStatement}`;
+        // Keep the public declaration entry at the package root. watchpack's
+        // copied declarations use extensionless relative imports, which leak
+        // into Rspack's generated d.ts and fail NodeNext type tests.
         const dtsPath = join(task.distPath, 'index.d.ts');
-        replaceFileContent(
+        writeFileSync(
           dtsPath,
-          (content) =>
-            `${content.replace(importStatement, ignoredImportStatement)}
+          `import Watchpack = require("./types/index");
+export default Watchpack;
 export type WatchOptions = Watchpack.WatchOptions;
 `,
         );
+
+        const packageJsonPath = join(task.distPath, 'package.json');
+        replaceFileContent(packageJsonPath, (content) => {
+          const packageJson = JSON.parse(content);
+          packageJson.types = 'index.d.ts';
+          return `${JSON.stringify(packageJson, null, 2)}\n`;
+        });
       },
     },
   ],

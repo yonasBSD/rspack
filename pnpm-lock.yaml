@@ -375,6 +375,9 @@ importers:
       prebundle:
         specifier: ^1.6.4
         version: 1.6.4(typescript@6.0.3)
+      rspack-merge:
+        specifier: 0.1.1
+        version: 0.1.1
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -14461,6 +14464,8 @@ snapshots:
   rsbuild-plugin-open-graph@1.1.2(@rsbuild/core@2.0.3):
     optionalDependencies:
       '@rsbuild/core': 2.0.3(@module-federation/runtime-tools@2.4.0)(core-js@3.49.0)
+
+  rspack-merge@0.1.1: {}
 
   rspack-merge@0.1.1: {}
 

@@ -1056,8 +1056,14 @@ export interface JsRscClientPluginOptions {
   coordinator: JsCoordinator
 }
 
+export interface JsRscCssLinkOptions {
+  precedence?: string | boolean
+  props?: Record<string, string>
+}
+
 export interface JsRscServerPluginOptions {
   coordinator: JsCoordinator
+  cssLink?: JsRscCssLinkOptions | undefined | null
   onServerComponentChanges?: (() => void | Promise<void>) | undefined | null
   onManifest?: ((arg: string) => Promise<undefined>) | undefined | null
 }

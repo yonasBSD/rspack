@@ -4054,7 +4054,6 @@ name = "rspack_javascript_compiler"
 version = "0.100.2"
 dependencies = [
  "anyhow",
- "base64",
  "indoc",
  "rspack_error",
  "rspack_sources",

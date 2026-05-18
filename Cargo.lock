@@ -3570,7 +3570,6 @@ dependencies = [
  "cow-utils",
  "derive_more",
  "futures",
- "glob",
  "heck",
  "napi",
  "napi-derive",
@@ -3792,6 +3791,7 @@ dependencies = [
  "derive_more",
  "dyn-clone",
  "either",
+ "fast-glob",
  "futures",
  "hashlink",
  "heck",
@@ -4220,9 +4220,10 @@ dependencies = [
 name = "rspack_plugin_copy"
 version = "0.100.3"
 dependencies = [
+ "cow-utils",
  "derive_more",
+ "fast-glob",
  "futures",
- "glob",
  "pathdiff",
  "regex",
  "rspack_core",

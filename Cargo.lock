@@ -4149,6 +4149,7 @@ dependencies = [
  "dashmap",
  "indexmap",
  "rspack_cacheable",
+ "rspack_resolver",
  "rustc-hash",
  "ustr-fxhash",
 ]
@@ -5055,9 +5056,9 @@ dependencies = [
 
 [[package]]
 name = "rspack_resolver"
-version = "0.8.0"
+version = "0.9.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "606bcaac4a8be081bf58ae173408ec104c89e0eb90196f9b91aeda30bd2f6365"
+checksum = "e4f80a6b1268eb712e1a030e7a86ed9b3f0a9ac4f14780c2efc20e4e3a050931"
 dependencies = [
  "arc-swap",
  "async-trait",

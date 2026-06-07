@@ -419,8 +419,8 @@ importers:
         specifier: 0.6.0
         version: 0.6.0
       pretty-format:
-        specifier: 30.3.0
-        version: 30.3.0
+        specifier: 30.4.1
+        version: 30.4.1
       rimraf:
         specifier: ^5.0.10
         version: 5.0.10

@@ -368,8 +368,8 @@ importers:
         specifier: ^1.6.5
         version: 1.6.5(typescript@6.0.3)
       rspack-merge:
-        specifier: 0.1.1
-        version: 0.1.1
+        specifier: 1.0.1
+        version: 1.0.1
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -425,8 +425,8 @@ importers:
         specifier: ^5.0.10
         version: 5.0.10
       rspack-merge:
-        specifier: 0.1.1
-        version: 0.1.1
+        specifier: 1.0.1
+        version: 1.0.1
       source-map:
         specifier: ^0.7.6
         version: 0.7.6
@@ -6463,8 +6463,8 @@ packages:
       '@rsbuild/core':
         optional: true
 
-  rspack-merge@0.1.1:
-    resolution: {integrity: sha512-RHKi8nECjP0lM1V7RnM+8G8dRvWgrsnntzfogJQz7oSHo104ca4jsL3KN/0gru233n/lVGrqDPDNlCA4x0UNlg==}
+  rspack-merge@1.0.1:
+    resolution: {integrity: sha512-W/mzCdxfV+EXOdpfwcLWc2TZ9EYa2LYumAMgpTn27bSEOO0BQz/SA8qfnJRCMkJyNST2URxmwqBmQbh5tLFwsg==}
 
   rspack-vue-loader@17.5.1:
     resolution: {integrity: sha512-1pXdeqYM95P0T8DO2ZcOCBnfMp62W5IG2c0RICn1rFYjHcja41IYSQLzcdc1uePEq0n4JZwvfR2lVs8wRZuwzA==}
@@ -13362,7 +13362,7 @@ snapshots:
     optionalDependencies:
       '@rsbuild/core': 2.0.11(@module-federation/runtime-tools@2.5.1)(core-js@3.49.0)
 
-  rspack-merge@0.1.1: {}
+  rspack-merge@1.0.1: {}
 
   rspack-vue-loader@17.5.1(@rspack/core@packages+rspack)(vue@3.5.35):
     dependencies:

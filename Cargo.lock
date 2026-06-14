@@ -5318,6 +5318,7 @@ dependencies = [
  "dashmap",
  "fast-glob",
  "notify",
+ "regex",
  "rspack_error",
  "rspack_paths",
  "rspack_regex",

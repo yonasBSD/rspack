@@ -372,12 +372,14 @@ export default {
 
 4. Migrate `snapshot`
 
+Move path-related snapshot options into `cache.snapshot`.
+
 ```diff title="rspack.config.mjs"
 export default {
 - snapshot: {
 -   immutablePaths: [path.join(__dirname, "constant")],
 -   managedPaths: [path.join(__dirname, "node_modules")],
--   unmanagedPaths: []
+-   unmanagedPaths: [],
 - },
 + cache: {
 +   type: "persistent",

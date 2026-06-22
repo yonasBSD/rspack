@@ -380,12 +380,14 @@ export default {
 
 4. 迁移 `snapshot`
 
+将路径相关的 snapshot 选项迁移到 `cache.snapshot` 中。
+
 ```diff title="rspack.config.mjs"
 export default {
 - snapshot: {
 -   immutablePaths: [path.join(__dirname, "constant")],
 -   managedPaths: [path.join(__dirname, "node_modules")],
--   unmanagedPaths: []
+-   unmanagedPaths: [],
 - },
 + cache: {
 +   type: "persistent",
